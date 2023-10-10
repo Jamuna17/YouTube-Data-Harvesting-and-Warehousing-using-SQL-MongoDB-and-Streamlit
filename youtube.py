@@ -26,7 +26,7 @@ with st.sidebar:
                                    "nav-link-selected": {"background-color": "#C80101"}})
     
 # Bridging a connection with MongoDB Atlas and Creating a new database(tests)
-client = pymongo.MongoClient("mongodb+srv://jamuvishnu108:jamunamon@cluster0.zmso0xq.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient(" ")
 db = client.tests
 
 # CONNECTING WITH MYSQL DATABASE
@@ -39,7 +39,7 @@ mycursor = mydb.cursor(buffered=True)
 
 
 # BUILDING CONNECTION WITH YOUTUBE API
-api_key = "AIzaSyCLhJqUakRaw6WL3CDFghGZ2TXpgM5ME6w"
+api_key = "your API key"
 youtube = build('youtube','v3',developerKey=api_key)
 
 # FUNCTION TO GET CHANNEL DETAILS
